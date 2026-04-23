@@ -1,0 +1,527 @@
+7.3s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.3s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.3s 3 0.00s - to python to disable frozen modules.
+7.3s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+7.9s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.9s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.9s 7 0.00s - to python to disable frozen modules.
+7.9s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+11.1s 9 Collecting opendatasets
+11.3s 10 Downloading opendatasets-0.1.22-py3-none-any.whl.metadata (9.2 kB)
+11.3s 11 Requirement already satisfied: tqdm in /usr/local/lib/python3.12/dist-packages (from opendatasets) (4.67.1)
+11.3s 12 Requirement already satisfied: kaggle in /usr/local/lib/python3.12/dist-packages (from opendatasets) (1.7.4.5)
+11.3s 13 Requirement already satisfied: click in /usr/local/lib/python3.12/dist-packages (from opendatasets) (8.3.1)
+11.3s 14 Requirement already satisfied: bleach in /usr/local/lib/python3.12/dist-packages (from kaggle->opendatasets) (6.2.0)
+11.3s 15 Requirement already satisfied: certifi>=14.05.14 in /usr/local/lib/python3.12/dist-packages (from kaggle->opendatasets) (2026.1.4)
+11.3s 16 Requirement already satisfied: charset-normalizer in /usr/local/lib/python3.12/dist-packages (from kaggle->opendatasets) (3.4.4)
+11.3s 17 Requirement already satisfied: idna in /usr/local/lib/python3.12/dist-packages (from kaggle->opendatasets) (3.11)
+11.3s 18 Requirement already satisfied: protobuf in /usr/local/lib/python3.12/dist-packages (from kaggle->opendatasets) (5.29.5)
+11.3s 19 Requirement already satisfied: python-dateutil>=2.5.3 in /usr/local/lib/python3.12/dist-packages (from kaggle->opendatasets) (2.9.0.post0)
+11.3s 20 Requirement already satisfied: python-slugify in /usr/local/lib/python3.12/dist-packages (from kaggle->opendatasets) (8.0.4)
+11.3s 21 Requirement already satisfied: requests in /usr/local/lib/python3.12/dist-packages (from kaggle->opendatasets) (2.32.5)
+11.3s 22 Requirement already satisfied: setuptools>=21.0.0 in /usr/local/lib/python3.12/dist-packages (from kaggle->opendatasets) (75.2.0)
+11.3s 23 Requirement already satisfied: six>=1.10 in /usr/local/lib/python3.12/dist-packages (from kaggle->opendatasets) (1.17.0)
+11.3s 24 Requirement already satisfied: text-unidecode in /usr/local/lib/python3.12/dist-packages (from kaggle->opendatasets) (1.3)
+11.3s 25 Requirement already satisfied: urllib3>=1.15.1 in /usr/local/lib/python3.12/dist-packages (from kaggle->opendatasets) (2.6.3)
+11.3s 26 Requirement already satisfied: webencodings in /usr/local/lib/python3.12/dist-packages (from kaggle->opendatasets) (0.5.1)
+11.4s 27 Downloading opendatasets-0.1.22-py3-none-any.whl (15 kB)
+13.4s 28 Installing collected packages: opendatasets
+13.4s 29 Successfully installed opendatasets-0.1.22
+13.6s 30 Note: you may need to restart the kernel to use updated packages.
+13.6s 31 /kaggle/working
+14.7s 32 /kaggle/working/dnn-watermark
+18.8s 33 ✅ Kaggle环境检测成功
+18.8s 34 ✅ GPU: Tesla P100-PCIE-16GB
+18.8s 35 
+18.8s 36 ======================================================================
+18.8s 37 🚀 DNN Watermarking - Kaggle训练
+18.8s 38 ======================================================================
+18.8s 39 📊 配置:
+18.8s 40 数据集: MNIST
+18.8s 41 流水线: full_compare
+18.8s 42 迁移任务: mnist_fashion (MNIST -> FashionMNIST)
+18.8s 43 模式: FixLL+PFL
+18.8s 44 训练触发器参数: n=100, m=10 (总数=1000)
+18.8s 45 验证触发器参数: n=100, m=10 (总数=1000)
+18.8s 46 触发器文件: /kaggle/working/key_chain/trigger_key_chain_28_100_10.pt
+18.8s 47 批次大小: 32
+18.8s 48 设备: cuda
+18.8s 49 ======================================================================
+18.8s 50 
+18.8s 51 ✅ 找到项目目录: /kaggle/working/dnn-watermark
+18.8s 52 📦 导入模块...
+24.1s 53 ✅ utilities.py
+25.0s 54 ✅ train_backdoor.py
+25.0s 55 ✅ model_resnet.py
+25.0s 56 ✅ 所有模块导入成功
+25.0s 57 
+25.0s 58 
+25.0s 59 📥 数据集: MNIST
+25.0s 60 📁 存储路径: /kaggle/temp/data/
+25.0s 61 💾 已有数据: 4.0K	/kaggle/temp/data/
+27.9s 62 [1/3] 尝试下载 MNIST (训练集)...   0%|                                               | 0.00/9.91M [00:00<?, ?B/s]  0%|▏                                      | 32.8k/9.91M [00:00<00:55, 177kB/s]  1%|▎                                      | 65.5k/9.91M [00:00<00:56, 176kB/s]  2%|▋                                       | 164k/9.91M [00:00<00:29, 335kB/s]  4%|█▍                                      | 360k/9.91M [00:00<00:15, 616kB/s]  7%|██▊                                    | 721k/9.91M [00:00<00:08, 1.09MB/s] 15%|█████▌                                | 1.44M/9.91M [00:01<00:04, 2.02MB/s] 29%|███████████▏                          | 2.92M/9.91M [00:01<00:01, 3.93MB/s] 59%|██████████████████████▎               | 5.83M/9.91M [00:01<00:00, 7.64MB/s]100%|█████████████████████████████████████▊| 9.86M/9.91M [00:01<00:00, 11.9MB/s]100%|██████████████████████████████████████| 9.91M/9.91M [00:01<00:00, 5.86MB/s]
+29.6s 63 0%|                                               | 0.00/28.9k [00:00<?, ?B/s]100%|███████████████████████████████████████| 28.9k/28.9k [00:00<00:00, 154kB/s]100%|███████████████████████████████████████| 28.9k/28.9k [00:00<00:00, 154kB/s]
+31.9s 64 0%|                                               | 0.00/1.65M [00:00<?, ?B/s]  2%|▊                                      | 32.8k/1.65M [00:00<00:09, 175kB/s]  4%|█▌                                     | 65.5k/1.65M [00:00<00:09, 175kB/s] 10%|███▉                                    | 164k/1.65M [00:00<00:04, 334kB/s] 22%|████████▋                               | 360k/1.65M [00:00<00:02, 616kB/s] 44%|█████████████████                      | 721k/1.65M [00:00<00:00, 1.09MB/s] 89%|█████████████████████████████████▉    | 1.47M/1.65M [00:01<00:00, 2.08MB/s]100%|██████████████████████████████████████| 1.65M/1.65M [00:01<00:00, 1.46MB/s]
+33.2s 65 0%|                                               | 0.00/4.54k [00:00<?, ?B/s]100%|██████████████████████████████████████| 4.54k/4.54k [00:00<00:00, 15.9MB/s]
+33.2s 66 ✅
+33.2s 67 [1/3] 尝试下载 MNIST (测试集)... ✅
+33.2s 68 🔄 创建DataLoader (batch_size=32, num_workers=2)... ✅
+33.2s 69 ✅ 数据加载完成! 训练集: 60000, 测试集: 10000
+33.2s 70 🔑 生成触发器集合...
+33.2s 71 生成新的触发器... (可能需要几分钟)
+33.3s 72 未检测到 ntu_logo.png，将继续生成纯噪声 Trigger.
+33.4s 73 ✅ 触发器生成完成
+33.4s 74 ✅ 触发器已加载 (数量: 1000)
+33.4s 75 
+33.4s 76 ======================================================================
+33.4s 77 🏋️  开始训练...
+33.4s 78 ======================================================================
+33.4s 79 
+33.4s 80 
+33.4s 81 ▶️  执行训练阶段: ref
+33.4s 82 Model number of parameters: 702374
+33.4s 83 Dataset: MNIST, model: ResNet18, mode: ref, training started using cuda...
+59.4s 84 [MNIST-ref] Best checkpoint updated: /kaggle/working/trained/MNIST/ref/MNIST_ResNet18_ref_Epoch_0_test_acc_96.83%_trigger_acc_0.00%.pt
+59.4s 85 MNIST, Mode: ref, Epoch: 0, testing acc: 96.83%, trigger Acc: 0/1000.
+84.7s 86 [MNIST-ref] Best checkpoint updated: /kaggle/working/trained/MNIST/ref/MNIST_ResNet18_ref_Epoch_1_test_acc_97.74%_trigger_acc_0.00%.pt
+84.7s 87 MNIST, Mode: ref, Epoch: 1, testing acc: 97.74%, trigger Acc: 0/1000.
+109.8s 88 [MNIST-ref] Best checkpoint updated: /kaggle/working/trained/MNIST/ref/MNIST_ResNet18_ref_Epoch_2_test_acc_98.19%_trigger_acc_0.00%.pt
+109.8s 89 MNIST, Mode: ref, Epoch: 2, testing acc: 98.19%, trigger Acc: 0/1000.
+134.7s 90 [MNIST-ref] Best checkpoint updated: /kaggle/working/trained/MNIST/ref/MNIST_ResNet18_ref_Epoch_3_test_acc_98.34%_trigger_acc_0.00%.pt
+134.7s 91 MNIST, Mode: ref, Epoch: 3, testing acc: 98.34%, trigger Acc: 0/1000.
+159.2s 92 [MNIST-ref] Best checkpoint updated: /kaggle/working/trained/MNIST/ref/MNIST_ResNet18_ref_Epoch_4_test_acc_98.49%_trigger_acc_0.00%.pt
+159.2s 93 MNIST, Mode: ref, Epoch: 4, testing acc: 98.49%, trigger Acc: 0/1000.
+183.7s 94 [MNIST-ref] Best checkpoint updated: /kaggle/working/trained/MNIST/ref/MNIST_ResNet18_ref_Epoch_5_test_acc_98.61%_trigger_acc_0.00%.pt
+183.7s 95 MNIST, Mode: ref, Epoch: 5, testing acc: 98.61%, trigger Acc: 0/1000.
+208.0s 96 [MNIST-ref] Best checkpoint updated: /kaggle/working/trained/MNIST/ref/MNIST_ResNet18_ref_Epoch_6_test_acc_98.69%_trigger_acc_0.00%.pt
+208.0s 97 MNIST, Mode: ref, Epoch: 6, testing acc: 98.69%, trigger Acc: 0/1000.
+232.0s 98 [MNIST-ref] Best checkpoint updated: /kaggle/working/trained/MNIST/ref/MNIST_ResNet18_ref_Epoch_7_test_acc_99.13%_trigger_acc_0.00%.pt
+232.0s 99 MNIST, Mode: ref, Epoch: 7, testing acc: 99.13%, trigger Acc: 0/1000.
+256.8s 100 MNIST, Mode: ref, Epoch: 8, testing acc: 98.94%, trigger Acc: 0/1000.
+281.8s 101 MNIST, Mode: ref, Epoch: 9, testing acc: 99.02%, trigger Acc: 0/1000.
+306.7s 102 [MNIST-ref] Best checkpoint updated: /kaggle/working/trained/MNIST/ref/MNIST_ResNet18_ref_Epoch_10_test_acc_99.30%_trigger_acc_0.00%.pt
+306.7s 103 MNIST, Mode: ref, Epoch: 10, testing acc: 99.30%, trigger Acc: 0/1000.
+331.5s 104 [MNIST-ref] Best checkpoint updated: /kaggle/working/trained/MNIST/ref/MNIST_ResNet18_ref_Epoch_11_test_acc_99.38%_trigger_acc_0.00%.pt
+331.5s 105 MNIST, Mode: ref, Epoch: 11, testing acc: 99.38%, trigger Acc: 0/1000.
+356.4s 106 MNIST, Mode: ref, Epoch: 12, testing acc: 99.34%, trigger Acc: 0/1000.
+381.6s 107 [MNIST-ref] Best checkpoint updated: /kaggle/working/trained/MNIST/ref/MNIST_ResNet18_ref_Epoch_13_test_acc_99.51%_trigger_acc_0.00%.pt
+381.6s 108 MNIST, Mode: ref, Epoch: 13, testing acc: 99.51%, trigger Acc: 0/1000.
+406.6s 109 MNIST, Mode: ref, Epoch: 14, testing acc: 99.34%, trigger Acc: 0/1000.
+431.2s 110 MNIST, Mode: ref, Epoch: 15, testing acc: 99.43%, trigger Acc: 0/1000.
+455.6s 111 MNIST, Mode: ref, Epoch: 16, testing acc: 99.50%, trigger Acc: 0/1000.
+479.9s 112 MNIST, Mode: ref, Epoch: 17, testing acc: 99.42%, trigger Acc: 0/1000.
+504.4s 113 MNIST, Mode: ref, Epoch: 18, testing acc: 99.40%, trigger Acc: 0/1000.
+528.8s 114 [MNIST-ref] Best checkpoint updated: /kaggle/working/trained/MNIST/ref/MNIST_ResNet18_ref_Epoch_19_test_acc_99.53%_trigger_acc_0.00%.pt
+528.8s 115 MNIST, Mode: ref, Epoch: 19, testing acc: 99.53%, trigger Acc: 0/1000.
+529.2s 116 
+529.2s 117 📦 自动保存完成:
+529.2s 118 - Summary JSON: /kaggle/working/result/MNIST_ref_20260422_143457_summary.json
+529.2s 119 - History CSV:  /kaggle/working/result/MNIST_ref_20260422_143457_history.csv
+529.2s 120 - Curve PNG:    /kaggle/working/result/MNIST_ref_20260422_143457_curve.png
+529.2s 121 
+529.2s 122 ▶️  执行训练阶段: FixLL+PFL
+529.3s 123 [MNIST][override] Using reference checkpoint: /kaggle/working/trained/MNIST/ref/MNIST_ResNet18_ref_Epoch_19_test_acc_99.53%_trigger_acc_0.00%.pt
+529.3s 124 Model number of parameters: 702374
+529.3s 125 Dataset: MNIST, model: ResNet18, mode: FixLL+PFL, training started using cuda...
+529.3s 126 [MNIST][deep_fidelity_override] Using reference checkpoint: /kaggle/working/trained/MNIST/ref/MNIST_ResNet18_ref_Epoch_19_test_acc_99.53%_trigger_acc_0.00%.pt
+576.4s 127 [MNIST-FixLL+PFL] Best checkpoint updated: /kaggle/working/trained/MNIST/FixLL+PFL/MNIST_ResNet18_FixLL+PFL_Epoch_0_test_acc_99.55%_trigger_acc_100.00%_n_100_m_10_mix_(32)4_LP_0.0000.pt
+576.4s 128 MNIST, Mode: FixLL+PFL, Epoch: 0, testing acc: 99.55%, trigger Acc: 1000/1000, LP: 0.0000, mix: (32)4.
+590.3s 129 MNIST_ResNet18_mix_(32)4_Epoch_0_test_acc_99.55%_trigger_acc_100.00%_TWL_4.8728_PFL_0.3266_SPL_0.0001_LP_0.0000
+637.4s 130 [MNIST-FixLL+PFL] Best checkpoint updated: /kaggle/working/trained/MNIST/FixLL+PFL/MNIST_ResNet18_FixLL+PFL_Epoch_1_test_acc_99.56%_trigger_acc_100.00%_n_100_m_10_mix_(32)4_LP_0.0000.pt
+637.4s 131 MNIST, Mode: FixLL+PFL, Epoch: 1, testing acc: 99.56%, trigger Acc: 1000/1000, LP: 0.0000, mix: (32)4.
+652.0s 132 MNIST_ResNet18_mix_(32)4_Epoch_1_test_acc_99.56%_trigger_acc_100.00%_TWL_5.1151_PFL_0.3244_SPL_0.0000_LP_0.0000
+698.8s 133 MNIST, Mode: FixLL+PFL, Epoch: 2, testing acc: 99.55%, trigger Acc: 1000/1000, LP: 0.0000, mix: (32)4.
+713.7s 134 MNIST_ResNet18_mix_(32)4_Epoch_2_test_acc_99.55%_trigger_acc_100.00%_TWL_5.3271_PFL_0.2530_SPL_0.0000_LP_0.0000
+761.2s 135 MNIST, Mode: FixLL+PFL, Epoch: 3, testing acc: 99.56%, trigger Acc: 1000/1000, LP: 0.0000, mix: (32)4.
+775.9s 136 MNIST_ResNet18_mix_(32)4_Epoch_3_test_acc_99.56%_trigger_acc_100.00%_TWL_5.5400_PFL_0.1790_SPL_0.0000_LP_0.0000
+823.6s 137 MNIST, Mode: FixLL+PFL, Epoch: 4, testing acc: 99.54%, trigger Acc: 1000/1000, LP: 0.0000, mix: (32)4.
+839.0s 138 MNIST_ResNet18_mix_(32)4_Epoch_4_test_acc_99.54%_trigger_acc_100.00%_TWL_5.7841_PFL_0.2185_SPL_0.0000_LP_0.0000
+885.8s 139 MNIST, Mode: FixLL+PFL, Epoch: 5, testing acc: 99.54%, trigger Acc: 1000/1000, LP: 0.0000, mix: (32)4.
+900.9s 140 MNIST_ResNet18_mix_(32)4_Epoch_5_test_acc_99.54%_trigger_acc_100.00%_TWL_5.9103_PFL_0.0868_SPL_0.0000_LP_0.0000
+900.9s 141 Early stopping triggered at epoch 5: trigger reached 100% and target acc has not improved for 4 consecutive epochs.
+901.1s 142 
+901.1s 143 📦 自动保存完成:
+901.1s 144 - Summary JSON: /kaggle/working/result/MNIST_FixLL+PFL_20260422_144109_summary.json
+901.1s 145 - History CSV:  /kaggle/working/result/MNIST_FixLL+PFL_20260422_144109_history.csv
+901.1s 146 - Curve PNG:    /kaggle/working/result/MNIST_FixLL+PFL_20260422_144109_curve.png
+901.1s 147 
+901.1s 148 ======================================================================
+901.1s 149 ✅ 训练完成!
+901.1s 150 ======================================================================
+901.1s 151 📁 模型已保存到: /kaggle/working/trained/
+901.1s 152 
+901.1s 153 🚚 开始迁移学习步骤...
+901.1s 154 replay_ratio: 0.0
+901.1s 155 run_tag: replay_zero
+901.1s 156 命令: /usr/bin/python3 /kaggle/working/dnn-watermark/transfer_learning.py --task mnist_fashion --source_model /kaggle/working/trained/MNIST/FixLL+PFL/MNIST_ResNet18_FixLL+PFL_Epoch_1_test_acc_99.56%_trigger_acc_100.00%_n_100_m_10_mix_(32)4_LP_0.0000.pt --num_epochs 50 --learning_rate 5e-05 --freeze_policy train_l4_fc_out --replay_ratio 0.0 --replay_weight 0.25 --feature_anchor_weight 0.02 --replay_ramp_ratio 0.3 --trigger_full_threshold 0.999 --trigger_rescue_threshold 0.97 --replay_sustain_scale_after_full 0.1 --trigger_rescue_hold_ratio 0.06 --replay_rescue_scale 0.35 --replay_start_trigger_threshold 0.85 --seed 42 --warmup_ratio 0.3 --lr_milestone1_ratio 0.65 --lr_milestone2_ratio 0.88 --adaptive_drop_threshold 0.012 --adaptive_decay 0.8 --adaptive_growth 1.0 --adaptive_min_factor 0.05 --adaptive_target_floor_ratio 0.95 --adaptive_trigger_guard 0.98 --adaptive_guard_decay 0.85 --replay_ratio_cap 0.06 --data_path /kaggle/temp/data/ --save_path /kaggle/working/trained/transfer_runs/MNIST2FashionMNIST/replay_zero --device cuda --lambda_sp 0.5 --trigger_file /kaggle/working/key_chain/trigger_key_chain_28_100_10.pt
+904.3s 157 ⚠️ 参数 --lambda_sp 在该脚本中未使用，已忽略。
+904.3s 158 Loading Target Dataset: FashionMNIST...
+908.2s 159 0%|                                               | 0.00/26.4M [00:00<?, ?B/s]  0%|                                       | 32.8k/26.4M [00:00<02:58, 148kB/s]  0%|                                       | 65.5k/26.4M [00:00<02:59, 147kB/s]  0%|▏                                       | 131k/26.4M [00:00<02:02, 214kB/s]  1%|▎                                       | 229k/26.4M [00:00<01:26, 303kB/s]  2%|▋                                       | 459k/26.4M [00:01<00:46, 564kB/s]  3%|█▎                                     | 918k/26.4M [00:01<00:23, 1.07MB/s]  7%|██▋                                   | 1.84M/26.4M [00:01<00:11, 2.06MB/s] 14%|█████▎                                | 3.67M/26.4M [00:01<00:05, 4.02MB/s] 28%|██████████▌                           | 7.31M/26.4M [00:02<00:02, 7.85MB/s] 43%|████████████████▍                     | 11.4M/26.4M [00:02<00:01, 11.0MB/s] 59%|██████████████████████▍               | 15.6M/26.4M [00:02<00:00, 13.3MB/s] 75%|████████████████████████████▎         | 19.7M/26.4M [00:02<00:00, 14.8MB/s] 90%|██████████████████████████████████▎   | 23.8M/26.4M [00:02<00:00, 15.8MB/s]100%|██████████████████████████████████████| 26.4M/26.4M [00:02<00:00, 9.03MB/s]
+909.8s 160 0%|                                               | 0.00/29.5k [00:00<?, ?B/s]100%|███████████████████████████████████████| 29.5k/29.5k [00:00<00:00, 136kB/s]100%|███████████████████████████████████████| 29.5k/29.5k [00:00<00:00, 136kB/s]
+912.4s 161 0%|                                               | 0.00/4.42M [00:00<?, ?B/s]  1%|▎                                      | 32.8k/4.42M [00:00<00:28, 156kB/s]  1%|▌                                      | 65.5k/4.42M [00:00<00:27, 156kB/s]  3%|█▏                                      | 131k/4.42M [00:00<00:18, 227kB/s]  5%|██                                      | 229k/4.42M [00:00<00:13, 322kB/s] 10%|████▏                                   | 459k/4.42M [00:01<00:06, 599kB/s] 21%|████████                               | 918k/4.42M [00:01<00:03, 1.14MB/s] 41%|███████████████▊                      | 1.84M/4.42M [00:01<00:01, 2.19MB/s] 83%|███████████████████████████████▌      | 3.67M/4.42M [00:01<00:00, 4.27MB/s]100%|██████████████████████████████████████| 4.42M/4.42M [00:01<00:00, 2.63MB/s]
+913.4s 162 0%|                                               | 0.00/5.15k [00:00<?, ?B/s]100%|██████████████████████████████████████| 5.15k/5.15k [00:00<00:00, 32.7MB/s]
+913.5s 163 Loading Source Checkpoint: /kaggle/working/trained/MNIST/FixLL+PFL/MNIST_ResNet18_FixLL+PFL_Epoch_1_test_acc_99.56%_trigger_acc_100.00%_n_100_m_10_mix_(32)4_LP_0.0000.pt
+913.6s 164 [TRANSFER] Auto-aligned penultimate_2d from source checkpoint: True
+913.8s 165 
+913.8s 166 [TRANSFER] Loading trigger file for replay mechanism:
+913.8s 167 File: /kaggle/working/key_chain/trigger_key_chain_28_100_10.pt
+913.8s 168 Shape: torch.Size([1000, 3, 28, 28])
+913.8s 169 Target shape: torch.Size([1000])
+913.9s 170 Unique labels: [0]
+913.9s 171 
+913.9s 172 --- Start Transfer: train_l4_fc_out (Penultimate 2D: True) | Replay Ratio: 0.0 | Warmup: 15 ---
+913.9s 173 [TRANSFER] Replay config: replay_weight=0.25, feature_anchor_weight=0.02, replay_ramp_ratio=0.3, replay_ramp_epochs=15, task_lr=5e-05
+913.9s 174 [TRANSFER] Epoch-ratio config: warmup_ratio=0.3 (warmup_epochs=15), lr_milestone1_ratio=0.65 (epoch=32), lr_milestone2_ratio=0.88 (epoch=44)
+913.9s 175 [TRANSFER] Adaptive replay: enabled=True, drop_threshold=0.012, decay=0.8, growth=1.0, min_factor=0.05
+913.9s 176 [TRANSFER] Target-priority guard: floor_ratio=0.95, trigger_guard=0.98, guard_decay=0.85, replay_ratio_cap=0.06
+913.9s 177 [TRANSFER] Trigger sustain mode: full_threshold=0.999, rescue_threshold=0.97, sustain_scale=0.1
+913.9s 178 [TRANSFER] Trigger rescue hold: hold_ratio=0.06 (hold_epochs=3), rescue_scale=0.35
+913.9s 179 [TRANSFER] Replay demand gate: start_trigger_threshold=0.85
+913.9s 180 
+913.9s 181 [INFO] trigger_label 设置说明:
+913.9s 182 所有 trigger 都指向同一个后门目标类别 0（共 1000 个样本）
+913.9s 183 初始 trigger_label 分布: tensor([1000])
+914.2s 184 初始 trigger_acc (native target-head): 100.0%
+914.2s 185 初始 trigger_acc (source-head-swap): 100.0%
+914.2s 186 
+933.1s 187 Epoch 01/50 | Tgt Acc: 8.1% | Trig Native: 100.0% | Trig Swap: 100.0% | Ret(Swap): 100.0% | Surv: 1000/1000 | CosShift: 0.0003 | MarginDrop: -2.6930 | ReplayFactor: 1.000
+951.5s 188 Epoch 02/50 | Tgt Acc: 14.4% | Trig Native: 98.6% | Trig Swap: 100.0% | Ret(Swap): 100.0% | Surv: 1000/1000 | CosShift: 0.0204 | MarginDrop: 6.0876 | ReplayFactor: 1.000
+969.7s 189 Epoch 03/50 | Tgt Acc: 18.1% | Trig Native: 0.0% | Trig Swap: 2.0% | Ret(Swap): 2.0% | Surv: 20/1000 | CosShift: 0.0609 | MarginDrop: 13.5408 | ReplayFactor: 1.000
+988.1s 190 Epoch 04/50 | Tgt Acc: 20.1% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.0915 | MarginDrop: 16.2617 | ReplayFactor: 1.000
+1006.6s 191 Epoch 05/50 | Tgt Acc: 21.8% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.1141 | MarginDrop: 17.5761 | ReplayFactor: 1.000
+1025.0s 192 Epoch 06/50 | Tgt Acc: 22.9% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.1404 | MarginDrop: 18.3448 | ReplayFactor: 1.000
+1043.2s 193 Epoch 07/50 | Tgt Acc: 23.6% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.1521 | MarginDrop: 18.6121 | ReplayFactor: 1.000
+1061.4s 194 Epoch 08/50 | Tgt Acc: 25.2% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.1698 | MarginDrop: 18.9573 | ReplayFactor: 1.000
+1079.7s 195 Epoch 09/50 | Tgt Acc: 26.4% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.1914 | MarginDrop: 19.0863 | ReplayFactor: 1.000
+1098.1s 196 Epoch 10/50 | Tgt Acc: 28.1% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.1888 | MarginDrop: 18.9605 | ReplayFactor: 1.000
+1116.4s 197 Epoch 11/50 | Tgt Acc: 29.2% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2021 | MarginDrop: 18.9774 | ReplayFactor: 1.000
+1134.9s 198 Epoch 12/50 | Tgt Acc: 30.1% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2093 | MarginDrop: 18.8904 | ReplayFactor: 1.000
+1153.5s 199 Epoch 13/50 | Tgt Acc: 31.4% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2175 | MarginDrop: 18.8043 | ReplayFactor: 1.000
+1172.0s 200 Epoch 14/50 | Tgt Acc: 32.2% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2211 | MarginDrop: 18.7231 | ReplayFactor: 1.000
+1190.7s 201 Epoch 15/50 | Tgt Acc: 32.7% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2289 | MarginDrop: 18.7542 | ReplayFactor: 1.000
+1209.2s 202 Epoch 16/50 | Tgt Acc: 33.9% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2375 | MarginDrop: 18.8155 | ReplayFactor: 1.000
+1227.4s 203 Epoch 17/50 | Tgt Acc: 33.4% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2336 | MarginDrop: 18.8285 | ReplayFactor: 1.000
+1245.5s 204 Epoch 18/50 | Tgt Acc: 35.6% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2528 | MarginDrop: 19.0571 | ReplayFactor: 1.000
+1263.8s 205 Epoch 19/50 | Tgt Acc: 36.3% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2487 | MarginDrop: 19.0630 | ReplayFactor: 1.000
+1281.9s 206 Epoch 20/50 | Tgt Acc: 38.5% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2501 | MarginDrop: 19.2706 | ReplayFactor: 1.000
+1300.1s 207 Epoch 21/50 | Tgt Acc: 39.3% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2492 | MarginDrop: 19.4903 | ReplayFactor: 1.000
+1318.4s 208 Epoch 22/50 | Tgt Acc: 40.8% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2558 | MarginDrop: 19.5261 | ReplayFactor: 1.000
+1336.6s 209 Epoch 23/50 | Tgt Acc: 41.7% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2521 | MarginDrop: 19.5514 | ReplayFactor: 1.000
+1354.5s 210 Epoch 24/50 | Tgt Acc: 42.6% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2509 | MarginDrop: 19.6914 | ReplayFactor: 1.000
+1372.7s 211 Epoch 25/50 | Tgt Acc: 43.7% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2546 | MarginDrop: 19.7104 | ReplayFactor: 1.000
+1390.7s 212 Epoch 26/50 | Tgt Acc: 43.9% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2514 | MarginDrop: 19.6871 | ReplayFactor: 1.000
+1408.8s 213 Epoch 27/50 | Tgt Acc: 44.9% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2493 | MarginDrop: 19.5484 | ReplayFactor: 1.000
+1426.9s 214 Epoch 28/50 | Tgt Acc: 45.3% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2528 | MarginDrop: 19.3792 | ReplayFactor: 1.000
+1445.1s 215 Epoch 29/50 | Tgt Acc: 45.2% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2513 | MarginDrop: 19.8537 | ReplayFactor: 1.000
+1463.1s 216 Epoch 30/50 | Tgt Acc: 45.7% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2517 | MarginDrop: 19.4855 | ReplayFactor: 1.000
+1481.2s 217 Epoch 31/50 | Tgt Acc: 46.0% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2516 | MarginDrop: 19.5050 | ReplayFactor: 1.000
+1500.0s 218 Epoch 32/50 | Tgt Acc: 46.9% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2562 | MarginDrop: 19.4592 | ReplayFactor: 1.000
+1518.1s 219 Epoch 33/50 | Tgt Acc: 46.2% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2461 | MarginDrop: 19.4899 | ReplayFactor: 1.000
+1536.2s 220 Epoch 34/50 | Tgt Acc: 45.9% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2442 | MarginDrop: 19.4646 | ReplayFactor: 1.000
+1554.4s 221 Epoch 35/50 | Tgt Acc: 46.2% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2449 | MarginDrop: 19.5264 | ReplayFactor: 1.000
+1572.4s 222 Epoch 36/50 | Tgt Acc: 46.3% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2498 | MarginDrop: 19.4333 | ReplayFactor: 1.000
+1590.5s 223 Epoch 37/50 | Tgt Acc: 46.8% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2501 | MarginDrop: 19.6732 | ReplayFactor: 1.000
+1608.6s 224 Epoch 38/50 | Tgt Acc: 46.0% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2413 | MarginDrop: 19.6741 | ReplayFactor: 1.000
+1626.7s 225 Epoch 39/50 | Tgt Acc: 46.2% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2534 | MarginDrop: 19.2681 | ReplayFactor: 1.000
+1644.7s 226 Epoch 40/50 | Tgt Acc: 46.3% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2487 | MarginDrop: 19.4827 | ReplayFactor: 1.000
+1662.8s 227 Epoch 41/50 | Tgt Acc: 46.5% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2464 | MarginDrop: 19.5437 | ReplayFactor: 1.000
+1680.7s 228 Epoch 42/50 | Tgt Acc: 46.4% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2519 | MarginDrop: 19.5894 | ReplayFactor: 1.000
+1698.6s 229 Epoch 43/50 | Tgt Acc: 46.6% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2489 | MarginDrop: 19.5260 | ReplayFactor: 1.000
+1716.5s 230 Epoch 44/50 | Tgt Acc: 46.4% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2532 | MarginDrop: 19.4243 | ReplayFactor: 1.000
+1734.4s 231 Epoch 45/50 | Tgt Acc: 46.3% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2499 | MarginDrop: 19.5600 | ReplayFactor: 1.000
+1752.3s 232 Epoch 46/50 | Tgt Acc: 46.4% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2504 | MarginDrop: 19.5979 | ReplayFactor: 1.000
+1770.1s 233 Epoch 47/50 | Tgt Acc: 46.6% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2519 | MarginDrop: 19.3907 | ReplayFactor: 1.000
+1788.0s 234 Epoch 48/50 | Tgt Acc: 46.5% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2452 | MarginDrop: 19.5778 | ReplayFactor: 1.000
+1805.9s 235 Epoch 49/50 | Tgt Acc: 46.3% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2516 | MarginDrop: 19.5294 | ReplayFactor: 1.000
+1824.0s 236 Epoch 50/50 | Tgt Acc: 46.5% | Trig Native: 0.0% | Trig Swap: 0.0% | Ret(Swap): 0.0% | Surv: 0/1000 | CosShift: 0.2520 | MarginDrop: 19.4607 | ReplayFactor: 1.000
+1824.0s 237 🔍 [Trigger Survival Analysis] 幸存率: 0.00% (0/1000)
+1824.0s 238 🔍 幸存的 Trigger 对应的目标类别为: []
+1824.0s 239 
+1824.0s 240 Saved tracking data to: /kaggle/working/trained/transfer_runs/MNIST2FashionMNIST/replay_zero/history_train_l4_fc_out_replay_0.0.csv
+1824.0s 241 Final transferred model saved to: /kaggle/working/trained/transfer_runs/MNIST2FashionMNIST/replay_zero/Final_Transfer_MNIST2FashionMNIST_train_l4_fc_out.pt
+1826.0s 242 
+1826.0s 243 📦 迁移阶段自动保存完成:
+1826.0s 244 - Transfer Summary: /kaggle/working/result/transfer_mnist_fashion_20260422_145634_summary.json
+1826.0s 245 - Transfer Curve:   /kaggle/working/result/transfer_mnist_fashion_20260422_145634_curve.png
+1826.0s 246 
+1826.0s 247 🚚 开始迁移学习步骤...
+1826.0s 248 replay_ratio: 0.15
+1826.0s 249 run_tag: replay_default
+1826.0s 250 命令: /usr/bin/python3 /kaggle/working/dnn-watermark/transfer_learning.py --task mnist_fashion --source_model /kaggle/working/trained/MNIST/FixLL+PFL/MNIST_ResNet18_FixLL+PFL_Epoch_1_test_acc_99.56%_trigger_acc_100.00%_n_100_m_10_mix_(32)4_LP_0.0000.pt --num_epochs 50 --learning_rate 5e-05 --freeze_policy train_l4_fc_out --replay_ratio 0.15 --replay_weight 0.25 --feature_anchor_weight 0.02 --replay_ramp_ratio 0.3 --trigger_full_threshold 0.999 --trigger_rescue_threshold 0.97 --replay_sustain_scale_after_full 0.1 --trigger_rescue_hold_ratio 0.06 --replay_rescue_scale 0.35 --replay_start_trigger_threshold 0.85 --seed 42 --warmup_ratio 0.3 --lr_milestone1_ratio 0.65 --lr_milestone2_ratio 0.88 --adaptive_drop_threshold 0.012 --adaptive_decay 0.8 --adaptive_growth 1.0 --adaptive_min_factor 0.05 --adaptive_target_floor_ratio 0.95 --adaptive_trigger_guard 0.98 --adaptive_guard_decay 0.85 --replay_ratio_cap 0.06 --data_path /kaggle/temp/data/ --save_path /kaggle/working/trained/transfer_runs/MNIST2FashionMNIST/replay_default --device cuda --lambda_sp 0.5 --trigger_file /kaggle/working/key_chain/trigger_key_chain_28_100_10.pt
+1829.0s 251 ⚠️ 参数 --lambda_sp 在该脚本中未使用，已忽略。
+1829.0s 252 Loading Target Dataset: FashionMNIST...
+1829.1s 253 Loading Source Checkpoint: /kaggle/working/trained/MNIST/FixLL+PFL/MNIST_ResNet18_FixLL+PFL_Epoch_1_test_acc_99.56%_trigger_acc_100.00%_n_100_m_10_mix_(32)4_LP_0.0000.pt
+1829.2s 254 [TRANSFER] Auto-aligned penultimate_2d from source checkpoint: True
+1829.5s 255 
+1829.5s 256 [TRANSFER] Loading trigger file for replay mechanism:
+1829.5s 257 File: /kaggle/working/key_chain/trigger_key_chain_28_100_10.pt
+1829.5s 258 Shape: torch.Size([1000, 3, 28, 28])
+1829.5s 259 Target shape: torch.Size([1000])
+1829.5s 260 Unique labels: [0]
+1829.5s 261 
+1829.5s 262 --- Start Transfer: train_l4_fc_out (Penultimate 2D: True) | Replay Ratio: 0.15 | Warmup: 15 ---
+1829.5s 263 [TRANSFER] Replay config: replay_weight=0.25, feature_anchor_weight=0.02, replay_ramp_ratio=0.3, replay_ramp_epochs=15, task_lr=5e-05
+1829.5s 264 [TRANSFER] Epoch-ratio config: warmup_ratio=0.3 (warmup_epochs=15), lr_milestone1_ratio=0.65 (epoch=32), lr_milestone2_ratio=0.88 (epoch=44)
+1829.5s 265 [TRANSFER] Adaptive replay: enabled=True, drop_threshold=0.012, decay=0.8, growth=1.0, min_factor=0.05
+1829.5s 266 [TRANSFER] Target-priority guard: floor_ratio=0.95, trigger_guard=0.98, guard_decay=0.85, replay_ratio_cap=0.06
+1829.5s 267 [TRANSFER] Trigger sustain mode: full_threshold=0.999, rescue_threshold=0.97, sustain_scale=0.1
+1829.5s 268 [TRANSFER] Trigger rescue hold: hold_ratio=0.06 (hold_epochs=3), rescue_scale=0.35
+1829.5s 269 [TRANSFER] Replay demand gate: start_trigger_threshold=0.85
+1829.5s 270 
+1829.5s 271 [INFO] trigger_label 设置说明:
+1829.5s 272 所有 trigger 都指向同一个后门目标类别 0（共 1000 个样本）
+1829.5s 273 初始 trigger_label 分布: tensor([1000])
+1829.8s 274 初始 trigger_acc (native target-head): 100.0%
+1829.8s 275 初始 trigger_acc (source-head-swap): 100.0%
+1829.8s 276 
+1848.2s 277 Epoch 01/50 | Tgt Acc: 8.1% | Trig Native: 100.0% | Trig Swap: 100.0% | Ret(Swap): 100.0% | Surv: 1000/1000 | CosShift: 0.0003 | MarginDrop: -2.6930 | ReplayFactor: 1.000
+1866.4s 278 Epoch 02/50 | Tgt Acc: 14.4% | Trig Native: 98.6% | Trig Swap: 100.0% | Ret(Swap): 100.0% | Surv: 1000/1000 | CosShift: 0.0204 | MarginDrop: 6.0876 | ReplayFactor: 1.000
+1884.4s 279 Epoch 03/50 | Tgt Acc: 18.1% | Trig Native: 0.0% | Trig Swap: 2.0% | Ret(Swap): 2.0% | Surv: 20/1000 | CosShift: 0.0609 | MarginDrop: 13.5408 | ReplayFactor: 1.000
+1904.9s 280 ⚡ [TRIGGER FULL] Enter sustain mode from next epoch (replay_scale <= 0.100)
+1905.2s 281 Epoch 04/50 | Tgt Acc: 20.0% | Trig Native: 100.0% | Trig Swap: 100.0% | Ret(Swap): 100.0% | Surv: 1000/1000 | CosShift: 0.0011 | MarginDrop: -2.1187 | ReplayFactor: 1.000
+1923.6s 282 Epoch 05/50 | Tgt Acc: 20.8% | Trig Native: 100.0% | Trig Swap: 100.0% | Ret(Swap): 100.0% | Surv: 1000/1000 | CosShift: 0.0060 | MarginDrop: 0.6465 | ReplayFactor: 1.000
+1941.9s 283 Epoch 06/50 | Tgt Acc: 22.3% | Trig Native: 64.7% | Trig Swap: 100.0% | Ret(Swap): 100.0% | Surv: 1000/1000 | CosShift: 0.0140 | MarginDrop: 4.9002 | ReplayFactor: 1.000
+1960.4s 284 Epoch 07/50 | Tgt Acc: 23.5% | Trig Native: 0.4% | Trig Swap: 100.0% | Ret(Swap): 100.0% | Surv: 1000/1000 | CosShift: 0.0178 | MarginDrop: 6.1739 | ReplayFactor: 1.000
+1978.2s 285 Epoch 08/50 | Tgt Acc: 24.4% | Trig Native: 0.0% | Trig Swap: 99.9% | Ret(Swap): 99.9% | Surv: 999/1000 | CosShift: 0.0254 | MarginDrop: 8.2484 | ReplayFactor: 1.000
+1996.1s 286 🚑 [TRIGGER RESCUE] Exit sustain mode from next epoch (trig=94.9%)
+1996.3s 287 Epoch 09/50 | Tgt Acc: 25.7% | Trig Native: 0.0% | Trig Swap: 94.9% | Ret(Swap): 94.9% | Surv: 949/1000 | CosShift: 0.0319 | MarginDrop: 9.5221 | ReplayFactor: 1.000
+2017.2s 288 ⚡ [TRIGGER FULL] Enter sustain mode from next epoch (replay_scale <= 0.100)
+2017.5s 289 Epoch 10/50 | Tgt Acc: 26.4% | Trig Native: 100.0% | Trig Swap: 100.0% | Ret(Swap): 100.0% | Surv: 1000/1000 | CosShift: 0.0000 | MarginDrop: -4.9446 | ReplayFactor: 1.000
+2036.1s 290 Epoch 11/50 | Tgt Acc: 28.0% | Trig Native: 100.0% | Trig Swap: 100.0% | Ret(Swap): 100.0% | Surv: 1000/1000 | CosShift: 0.0005 | MarginDrop: -5.6934 | ReplayFactor: 1.000
+2054.7s 291 Epoch 12/50 | Tgt Acc: 29.3% | Trig Native: 0.1% | Trig Swap: 100.0% | Ret(Swap): 100.0% | Surv: 1000/1000 | CosShift: 0.0009 | MarginDrop: -4.4401 | ReplayFactor: 1.000
+2073.3s 292 Epoch 13/50 | Tgt Acc: 29.8% | Trig Native: 0.0% | Trig Swap: 100.0% | Ret(Swap): 100.0% | Surv: 1000/1000 | CosShift: 0.0017 | MarginDrop: -2.3018 | ReplayFactor: 1.000
+2091.5s 293 Epoch 14/50 | Tgt Acc: 30.5% | Trig Native: 0.0% | Trig Swap: 100.0% | Ret(Swap): 100.0% | Surv: 1000/1000 | CosShift: 0.0021 | MarginDrop: -1.5125 | ReplayFactor: 1.000
+2110.0s 294 Epoch 15/50 | Tgt Acc: 30.9% | Trig Native: 0.0% | Trig Swap: 100.0% | Ret(Swap): 100.0% | Surv: 1000/1000 | CosShift: 0.0028 | MarginDrop: -0.2204 | ReplayFactor: 1.000
+2128.7s 295 Epoch 16/50 | Tgt Acc: 31.1% | Trig Native: 0.0% | Trig Swap: 100.0% | Ret(Swap): 100.0% | Surv: 1000/1000 | CosShift: 0.0040 | MarginDrop: 1.0550 | ReplayFactor: 1.000
+2146.9s 296 Epoch 17/50 | Tgt Acc: 32.2% | Trig Native: 0.0% | Trig Swap: 100.0% | Ret(Swap): 100.0% | Surv: 1000/1000 | CosShift: 0.0055 | MarginDrop: 2.3414 | ReplayFactor: 1.000
+2165.2s 297 Epoch 18/50 | Tgt Acc: 34.4% | Trig Native: 0.0% | Trig Swap: 100.0% | Ret(Swap): 100.0% | Surv: 1000/1000 | CosShift: 0.0089 | MarginDrop: 4.1906 | ReplayFactor: 1.000
+2183.6s 298 Epoch 19/50 | Tgt Acc: 36.4% | Trig Native: 0.0% | Trig Swap: 100.0% | Ret(Swap): 100.0% | Surv: 1000/1000 | CosShift: 0.0093 | MarginDrop: 4.4129 | ReplayFactor: 1.000
+2202.0s 299 Epoch 20/50 | Tgt Acc: 38.4% | Trig Native: 0.0% | Trig Swap: 100.0% | Ret(Swap): 100.0% | Surv: 1000/1000 | CosShift: 0.0112 | MarginDrop: 5.0001 | ReplayFactor: 1.000
+2220.4s 300 Epoch 21/50 | Tgt Acc: 39.7% | Trig Native: 0.0% | Trig Swap: 100.0% | Ret(Swap): 100.0% | Surv: 1000/1000 | CosShift: 0.0124 | MarginDrop: 5.3979 | ReplayFactor: 1.000
+2239.1s 301 Epoch 22/50 | Tgt Acc: 41.1% | Trig Native: 0.0% | Trig Swap: 100.0% | Ret(Swap): 100.0% | Surv: 1000/1000 | CosShift: 0.0158 | MarginDrop: 6.2872 | ReplayFactor: 1.000
+2257.8s 302 Epoch 23/50 | Tgt Acc: 41.9% | Trig Native: 0.0% | Trig Swap: 100.0% | Ret(Swap): 100.0% | Surv: 1000/1000 | CosShift: 0.0191 | MarginDrop: 7.1571 | ReplayFactor: 1.000
+2276.5s 303 Epoch 24/50 | Tgt Acc: 42.8% | Trig Native: 0.0% | Trig Swap: 100.0% | Ret(Swap): 100.0% | Surv: 1000/1000 | CosShift: 0.0211 | MarginDrop: 7.5752 | ReplayFactor: 1.000
+2294.9s 304 Epoch 25/50 | Tgt Acc: 43.5% | Trig Native: 0.0% | Trig Swap: 100.0% | Ret(Swap): 100.0% | Surv: 1000/1000 | CosShift: 0.0218 | MarginDrop: 7.7044 | ReplayFactor: 1.000
+2313.6s 305 Epoch 26/50 | Tgt Acc: 43.8% | Trig Native: 0.0% | Trig Swap: 100.0% | Ret(Swap): 100.0% | Surv: 1000/1000 | CosShift: 0.0215 | MarginDrop: 7.6726 | ReplayFactor: 1.000
+2332.0s 306 Epoch 27/50 | Tgt Acc: 44.5% | Trig Native: 0.0% | Trig Swap: 100.0% | Ret(Swap): 100.0% | Surv: 1000/1000 | CosShift: 0.0239 | MarginDrop: 8.1224 | ReplayFactor: 1.000
+2351.0s 307 Epoch 28/50 | Tgt Acc: 45.1% | Trig Native: 0.0% | Trig Swap: 99.9% | Ret(Swap): 99.9% | Surv: 999/1000 | CosShift: 0.0255 | MarginDrop: 8.4104 | ReplayFactor: 1.000
+2370.6s 308 Epoch 29/50 | Tgt Acc: 45.7% | Trig Native: 0.0% | Trig Swap: 99.9% | Ret(Swap): 99.9% | Surv: 999/1000 | CosShift: 0.0255 | MarginDrop: 8.3923 | ReplayFactor: 1.000
+2389.8s 309 Epoch 30/50 | Tgt Acc: 46.0% | Trig Native: 0.0% | Trig Swap: 99.5% | Ret(Swap): 99.5% | Surv: 995/1000 | CosShift: 0.0277 | MarginDrop: 8.8186 | ReplayFactor: 1.000
+2408.7s 310 Epoch 31/50 | Tgt Acc: 46.3% | Trig Native: 0.0% | Trig Swap: 99.6% | Ret(Swap): 99.6% | Surv: 996/1000 | CosShift: 0.0262 | MarginDrop: 8.5864 | ReplayFactor: 1.000
+2427.8s 311 Epoch 32/50 | Tgt Acc: 46.4% | Trig Native: 0.0% | Trig Swap: 99.5% | Ret(Swap): 99.5% | Surv: 995/1000 | CosShift: 0.0261 | MarginDrop: 8.5030 | ReplayFactor: 0.850
+2446.8s 312 Epoch 33/50 | Tgt Acc: 46.4% | Trig Native: 0.0% | Trig Swap: 99.5% | Ret(Swap): 99.5% | Surv: 995/1000 | CosShift: 0.0266 | MarginDrop: 8.5932 | ReplayFactor: 0.722
+2465.6s 313 Epoch 34/50 | Tgt Acc: 46.6% | Trig Native: 0.0% | Trig Swap: 99.5% | Ret(Swap): 99.5% | Surv: 995/1000 | CosShift: 0.0272 | MarginDrop: 8.7070 | ReplayFactor: 0.614
+2484.3s 314 Epoch 35/50 | Tgt Acc: 46.7% | Trig Native: 0.0% | Trig Swap: 99.4% | Ret(Swap): 99.4% | Surv: 994/1000 | CosShift: 0.0275 | MarginDrop: 8.8118 | ReplayFactor: 0.522
+2503.2s 315 Epoch 36/50 | Tgt Acc: 46.9% | Trig Native: 0.0% | Trig Swap: 99.5% | Ret(Swap): 99.5% | Surv: 995/1000 | CosShift: 0.0269 | MarginDrop: 8.7205 | ReplayFactor: 0.522
+2521.9s 316 Epoch 37/50 | Tgt Acc: 46.8% | Trig Native: 0.0% | Trig Swap: 99.5% | Ret(Swap): 99.5% | Surv: 995/1000 | CosShift: 0.0274 | MarginDrop: 8.8246 | ReplayFactor: 0.444
+2540.8s 317 Epoch 38/50 | Tgt Acc: 46.8% | Trig Native: 0.0% | Trig Swap: 99.6% | Ret(Swap): 99.6% | Surv: 996/1000 | CosShift: 0.0260 | MarginDrop: 8.5156 | ReplayFactor: 0.377
+2559.8s 318 Epoch 39/50 | Tgt Acc: 46.8% | Trig Native: 0.0% | Trig Swap: 99.7% | Ret(Swap): 99.7% | Surv: 997/1000 | CosShift: 0.0259 | MarginDrop: 8.5177 | ReplayFactor: 0.321
+2578.6s 319 Epoch 40/50 | Tgt Acc: 47.1% | Trig Native: 0.0% | Trig Swap: 99.7% | Ret(Swap): 99.7% | Surv: 997/1000 | CosShift: 0.0256 | MarginDrop: 8.3948 | ReplayFactor: 0.321
+2596.9s 320 Epoch 41/50 | Tgt Acc: 46.9% | Trig Native: 0.0% | Trig Swap: 99.8% | Ret(Swap): 99.8% | Surv: 998/1000 | CosShift: 0.0252 | MarginDrop: 8.3084 | ReplayFactor: 0.272
+2615.5s 321 Epoch 42/50 | Tgt Acc: 47.1% | Trig Native: 0.0% | Trig Swap: 99.7% | Ret(Swap): 99.7% | Surv: 997/1000 | CosShift: 0.0249 | MarginDrop: 8.3624 | ReplayFactor: 0.272
+2633.5s 322 Epoch 43/50 | Tgt Acc: 47.0% | Trig Native: 0.0% | Trig Swap: 99.7% | Ret(Swap): 99.7% | Surv: 997/1000 | CosShift: 0.0252 | MarginDrop: 8.4226 | ReplayFactor: 0.232
+2651.9s 323 Epoch 44/50 | Tgt Acc: 47.2% | Trig Native: 0.0% | Trig Swap: 99.5% | Ret(Swap): 99.5% | Surv: 995/1000 | CosShift: 0.0262 | MarginDrop: 8.5398 | ReplayFactor: 0.197
+2670.0s 324 Epoch 45/50 | Tgt Acc: 46.9% | Trig Native: 0.0% | Trig Swap: 99.5% | Ret(Swap): 99.5% | Surv: 995/1000 | CosShift: 0.0271 | MarginDrop: 8.7402 | ReplayFactor: 0.167
+2688.2s 325 Epoch 46/50 | Tgt Acc: 46.9% | Trig Native: 0.0% | Trig Swap: 99.2% | Ret(Swap): 99.2% | Surv: 992/1000 | CosShift: 0.0279 | MarginDrop: 8.8866 | ReplayFactor: 0.142
+2706.3s 326 Epoch 47/50 | Tgt Acc: 46.9% | Trig Native: 0.0% | Trig Swap: 99.0% | Ret(Swap): 99.0% | Surv: 990/1000 | CosShift: 0.0287 | MarginDrop: 9.0056 | ReplayFactor: 0.121
+2724.2s 327 Epoch 48/50 | Tgt Acc: 46.8% | Trig Native: 0.0% | Trig Swap: 99.5% | Ret(Swap): 99.5% | Surv: 995/1000 | CosShift: 0.0269 | MarginDrop: 8.6828 | ReplayFactor: 0.103
+2743.0s 328 Epoch 49/50 | Tgt Acc: 46.9% | Trig Native: 0.0% | Trig Swap: 99.5% | Ret(Swap): 99.5% | Surv: 995/1000 | CosShift: 0.0268 | MarginDrop: 8.7049 | ReplayFactor: 0.087
+2761.7s 329 Epoch 50/50 | Tgt Acc: 47.1% | Trig Native: 0.0% | Trig Swap: 99.7% | Ret(Swap): 99.7% | Surv: 997/1000 | CosShift: 0.0255 | MarginDrop: 8.3878 | ReplayFactor: 0.074
+2761.7s 330 🔍 [Trigger Survival Analysis] 幸存率: 99.70% (997/1000)
+2761.7s 331 🔍 幸存的 Trigger 对应的目标类别为: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2761.7s 332 
+2761.7s 333 Saved tracking data to: /kaggle/working/trained/transfer_runs/MNIST2FashionMNIST/replay_default/history_train_l4_fc_out_replay_0.15.csv
+2761.7s 334 Final transferred model saved to: /kaggle/working/trained/transfer_runs/MNIST2FashionMNIST/replay_default/Final_Transfer_MNIST2FashionMNIST_train_l4_fc_out.pt
+2762.9s 335 
+2762.9s 336 📦 迁移阶段自动保存完成:
+2762.9s 337 - Transfer Summary: /kaggle/working/result/transfer_mnist_fashion_20260422_151211_summary.json
+2762.9s 338 - Transfer Curve:   /kaggle/working/result/transfer_mnist_fashion_20260422_151211_curve.png
+2762.9s 339 
+2762.9s 340 📊 Replay 对比完成:
+2762.9s 341 - Compare Summary: /kaggle/working/result/transfer_compare_20260422_151211_summary.json
+2762.9s 342 - replay_zero: replay_ratio=0.0 | test_acc=None | trigger_acc=None
+2762.9s 343 - replay_default: replay_ratio=0.15 | test_acc=None | trigger_acc=None
+2762.9s 344 
+2762.9s 345 🔍 开始水印验证步骤...
+2762.9s 346 命令: /usr/bin/python3 /kaggle/working/dnn-watermark/verify_watermark.py --source_model /kaggle/working/trained/MNIST/FixLL+PFL/MNIST_ResNet18_FixLL+PFL_Epoch_1_test_acc_99.56%_trigger_acc_100.00%_n_100_m_10_mix_(32)4_LP_0.0000.pt --target_model /kaggle/working/trained/transfer_runs/MNIST2FashionMNIST/replay_default/Final_Transfer_MNIST2FashionMNIST_train_l4_fc_out.pt --n_triggers 100 --m_chains 10 --data_path /kaggle/temp/data/ --dataset_name FashionMNIST --output_dir /kaggle/working/result/ --device cuda --trigger_file /kaggle/working/key_chain/trigger_key_chain_28_100_10.pt
+2766.1s 347 加载触发器文件: /kaggle/working/key_chain/trigger_key_chain_28_100_10.pt
+2766.1s 348 ✅ 已加载触发器: 样本数=1000
+2766.1s 349 
+2766.1s 350 ################################################################################
+2766.1s 351 # 开始水印验证流程
+2766.1s 352 ################################################################################
+2766.1s 353 
+2766.3s 354 📋 配置推断结果:
+2766.3s 355 源模型: num_classes=10, penultimate_2d=True
+2766.3s 356 目标模型: num_classes=10, penultimate_2d=True
+2766.4s 357 ✅ 模型已加载
+2766.4s 358 源模型: /kaggle/working/trained/MNIST/FixLL+PFL/MNIST_ResNet18_FixLL+PFL_Epoch_1_test_acc_99.56%_trigger_acc_100.00%_n_100_m_10_mix_(32)4_LP_0.0000.pt
+2766.4s 359 目标模型: /kaggle/working/trained/transfer_runs/MNIST2FashionMNIST/replay_default/Final_Transfer_MNIST2FashionMNIST_train_l4_fc_out.pt
+2766.4s 360 
+2766.4s 361 ================================================================================
+2766.4s 362 验证1: 分类头冻结状态
+2766.4s 363 ================================================================================
+2766.4s 364 分类头权重差异 (Frobenius): 1.96271229
+2766.4s 365 分类头偏置差异: 0.00000000
+2766.4s 366 ❌ 分类头显著改变 → 水印可能已失效
+2766.4s 367 ================================================================================
+2766.4s 368 
+2768.5s 369 
+2768.5s 370 ================================================================================
+2768.5s 371 验证2: 特征漂移分析
+2768.5s 372 ================================================================================
+2768.5s 373 特征L2距离: 28.0750
+2768.5s 374 特征余弦相似度: -0.4017
+2768.5s 375 ❌ 特征漂移大 → 水印可能已失效
+2768.5s 376 ================================================================================
+2768.5s 377 
+2768.7s 378 
+2768.7s 379 ================================================================================
+2768.7s 380 验证3: 触发器响应率 (最重要)
+2768.7s 381 ================================================================================
+2768.7s 382 源模型（MNIST）触发器准确率: 100.00%
+2768.7s 383 目标模型（FashionMNIST，target-head）触发器准确率: 0.00%
+2768.7s 384 目标模型（FashionMNIST，source-head-swap）触发器准确率: 0.30%
+2768.7s 385 保留比例（target-head）: 0.00%
+2768.7s 386 保留比例（source-head-swap）: 0.30%
+2768.7s 387 提示: 主留存率口径为 source-head-swap；恢复模块的“恢复前/后”默认与该口径对齐。
+2768.7s 388 ❌ 水印严重流失 (<60%)
+2768.7s 389 ================================================================================
+2768.7s 390 
+2768.7s 391 
+2768.7s 392 额外分析: 触发器置信度
+2768.7s 393 ----------------------------------------
+2768.7s 394 源模型:
+2768.7s 395 触发器激活logit_0:
+2768.7s 396 - 平均值: 57.9167
+2768.7s 397 - 标准差: 6.1638
+2768.7s 398 - 正确触发时的平均logit: 57.9167
+2768.7s 399 
+2768.7s 400 目标模型:
+2768.8s 401 触发器激活logit_0:
+2768.8s 402 - 平均值: -6.7809
+2768.8s 403 - 标准差: 0.3140
+2768.8s 404 - 正确触发时的平均logit: 0.0000
+2769.5s 405 
+2769.5s 406 ✅ 触发器分析图已保存: /kaggle/working/result/trigger_analysis.png
+2769.5s 407 
+2769.5s 408 ================================================================================
+2769.5s 409 开始水印恢复分析...
+2769.5s 410 ================================================================================
+2769.5s 411 
+2769.5s 412 📊 特征形状: 源=torch.Size([1000, 2]), 目标=torch.Size([1000, 2])
+2769.5s 413 
+2769.5s 414 【诊断信息】特征变化分析:
+2769.5s 415 特征 MSE 变化: 0.679546 (0=相同, 大值=变化大)
+2769.5s 416 余弦相似度: 0.902383 (1=相同, <0.5=变化大)
+2769.5s 417 
+2769.5s 418 [恢复方法1] 分析特征空间仿射变换...
+2769.7s 419 
+2769.7s 420 ============================================================
+2769.7s 421 📊 仿射变换分析报告
+2769.7s 422 ------------------------------------------------------------
+2769.7s 423 特征维度: 2
+2769.7s 424 样本数: 1000
+2769.7s 425 
+2769.7s 426 【平移信息】
+2769.7s 427 平移向量 b 的模: 17.630579
+2769.7s 428 平移向量 b: [16.287376 -6.74972 ]
+2769.7s 429 
+2769.7s 430 【缩放信息】
+2769.7s 431 奇异值 S: [0.19635443 0.0417135 ]
+2769.7s 432 最大奇异值 (主要缩放): 0.196354
+2769.7s 433 最小奇异值: 0.041714
+2769.7s 434 条件数 (conditioning): 4.71
+2769.7s 435 
+2769.7s 436 【旋转信息】
+2769.7s 437 旋转角度 θ: 1.86°
+2769.7s 438 
+2769.7s 439 🛠️ 正在执行逆变换恢复...
+2769.8s 440 重建误差: 939.772583
+2769.8s 441 相对误差: 0.468499
+2769.8s 442 
+2769.8s 443 【触发器准确率】
+2769.8s 444 恢复前: 0.30% (3/1000)
+2769.8s 445 pinv恢复后: 74.00% (740/1000)
+2769.8s 446 正则逆恢复后: 53.00% (530/1000)
+2769.8s 447 采用方案: pinv
+2769.8s 448 恢复后: 74.00% (740/1000)
+2769.8s 449 恢复增益: 73.92%
+2769.8s 450 ============================================================
+2769.8s 451 
+2769.8s 452 ✅ 仿射变换分析完成
+2769.8s 453 
+2769.8s 454 [恢复方法2] 训练非线性特征恢复网络...
+2769.8s 455 
+2769.8s 456 🚀 训练非线性特征恢复网络
+2769.8s 457 特征维度: 2, 隐藏层: 64, 深度: 4, 训练轮数: 1500
+2769.8s 458 学习率: 0.01, 优化器: Adam with CosineAnnealing
+2769.8s 459 开始训练...
+2770.4s 460 Epoch 150/1500, Total: 22.184921, MSE: 22.184914, CE: 0.000035
+2770.7s 461 早停触发 (epoch 283)
+2770.7s 462 
+2770.7s 463 ============================================================
+2770.7s 464 非线性特征恢复分析
+2770.7s 465 ------------------------------------------------------------
+2770.7s 466 特征维度: 2
+2770.7s 467 【恢复质量】
+2770.7s 468 相对 MSE: 0.223986
+2770.7s 469 余弦相似度: 0.999911
+2770.7s 470 【触发器准确率】
+2770.7s 471 恢复前: 0.30% (3/1000)
+2770.7s 472 恢复后: 100.00% (1000/1000)
+2770.7s 473 恢复增益: 100.00%
+2770.7s 474 ============================================================
+2770.7s 475 
+2770.7s 476 ✅ 神经网络恢复完成
+2770.7s 477 
+2770.7s 478 【改进建议】
+2770.7s 479 
+2770.7s 480 ❌ 恢复分析出现错误: name 'raw_logits' is not defined
+2770.7s 481 Traceback (most recent call last):
+2770.7s 482 File "/kaggle/working/dnn-watermark/verify_watermark.py", line 532, in run_recovery_analysis
+2770.7s 483 'recovery_before_primary_acc': f"{(raw_logits.argmax(dim=1).eq(trigger_labels).float().mean().item() * 100):.2f}%",
+2770.7s 484 ^^^^^^^^^^
+2770.7s 485 NameError: name 'raw_logits' is not defined
+2770.7s 486 
+2770.7s 487 ================================================================================
+2770.7s 488 最终验证报告
+2770.7s 489 ================================================================================
+2770.7s 490 分类头冻结               : ❌
+2770.7s 491 特征保留                : -40.17%
+2770.7s 492 主留存率(source-head-swap): 0.30%
+2770.7s 493 综合评分                : -8.28/100
+2770.7s 494 ================================================================================
+2770.7s 495 
+2770.7s 496 ✅ 详细报告已保存: /kaggle/working/result/watermark_verification_report.json
+2770.7s 497 
+2770.7s 498 ✅ 验证完成！
+2771.6s 499 
+2771.6s 500 🎨 开始生成10分类特征分布图...
+2771.6s 501 命令: /usr/bin/python3 /kaggle/working/dnn-watermark/draw_pic.py --class_distribution --dataset MNIST --source_model /kaggle/working/trained/MNIST/FixLL+PFL/MNIST_ResNet18_FixLL+PFL_Epoch_1_test_acc_99.56%_trigger_acc_100.00%_n_100_m_10_mix_(32)4_LP_0.0000.pt --target_model /kaggle/working/trained/transfer_runs/MNIST2FashionMNIST/replay_default/Final_Transfer_MNIST2FashionMNIST_train_l4_fc_out.pt --data_root /kaggle/temp/data/ --output /kaggle/working/result/feature_distribution_MNIST_20260422_151220.png --max_points 10000
+2780.0s 502 ✅ 10分类特征分布图绘制完成
+2780.0s 503 输出: /kaggle/working/result/feature_distribution_MNIST_20260422_151220.png
+2780.0s 504 数据集: MNIST, 样本数: 10000, 源特征维度: 2, 目标特征维度: 2
+2780.9s 505 ✅ 特征分布图已生成:
+2780.9s 506 - PNG: /kaggle/working/result/feature_distribution_MNIST_20260422_151220.png
+2780.9s 507 
+2780.9s 508 💡 Kaggle特定说明:
+2780.9s 509 ✅ 所有文件已保存到 /kaggle/working/
+2780.9s 510 ✅ 在 'Output' 选项卡中查看和下载
+2780.9s 511 ✅ 如要继续训练，使用Load保存的模型
+2780.9s 512 ✅ 训练曲线和汇总报告在 /kaggle/working/result/
+2780.9s 513 
+2780.9s 514 ✨ 脚本执行完成!
+2780.9s 515 
+2784.3s 516 /usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+2784.3s 517 cells[i][c] = re.sub('\\\\\|', '|', cell)
+2784.4s 518 /usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+2784.4s 519 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+2785.1s 520 /usr/local/lib/python3.12/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=["remove_papermill_header.RemovePapermillHeader"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+2785.1s 521 warn(
+2785.1s 522 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+2785.4s 523 [NbConvertApp] Writing 52715 bytes to __notebook__.ipynb
+2787.8s 524 /usr/local/lib/python3.12/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=["nbconvert.preprocessors.ExtractOutputPreprocessor"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+2787.8s 525 warn(
+2787.8s 526 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+2788.6s 527 [NbConvertApp] Writing 317762 bytes to __results__.html

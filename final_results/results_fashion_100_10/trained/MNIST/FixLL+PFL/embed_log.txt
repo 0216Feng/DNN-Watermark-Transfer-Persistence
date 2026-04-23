@@ -1,0 +1,6 @@
+MNIST_ResNet18_mix_(32)4_Epoch_0_test_acc_99.55%_trigger_acc_100.00%_TWL_4.8728_PFL_0.3266_SPL_0.0001_LP_0.0000
+MNIST_ResNet18_mix_(32)4_Epoch_1_test_acc_99.56%_trigger_acc_100.00%_TWL_5.1151_PFL_0.3244_SPL_0.0000_LP_0.0000
+MNIST_ResNet18_mix_(32)4_Epoch_2_test_acc_99.55%_trigger_acc_100.00%_TWL_5.3271_PFL_0.2530_SPL_0.0000_LP_0.0000
+MNIST_ResNet18_mix_(32)4_Epoch_3_test_acc_99.56%_trigger_acc_100.00%_TWL_5.5400_PFL_0.1790_SPL_0.0000_LP_0.0000
+MNIST_ResNet18_mix_(32)4_Epoch_4_test_acc_99.54%_trigger_acc_100.00%_TWL_5.7841_PFL_0.2185_SPL_0.0000_LP_0.0000
+MNIST_ResNet18_mix_(32)4_Epoch_5_test_acc_99.54%_trigger_acc_100.00%_TWL_5.9103_PFL_0.0868_SPL_0.0000_LP_0.0000

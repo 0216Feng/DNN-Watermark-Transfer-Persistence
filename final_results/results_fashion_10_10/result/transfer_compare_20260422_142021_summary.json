@@ -1,0 +1,40 @@
+{
+  "run_meta": {
+    "task": "mnist_fashion",
+    "source_model": "/kaggle/working/trained/MNIST/FixLL+PFL/MNIST_ResNet18_FixLL+PFL_Epoch_3_test_acc_99.43%_trigger_acc_100.00%_n_10_m_10_mix_(32)4_LP_0.0000.pt",
+    "verify_dataset_name": "FashionMNIST",
+    "compare_mode": "full_compare"
+  },
+  "runs": [
+    {
+      "label": "replay_zero",
+      "replay_ratio": 0.0,
+      "save_path": "/kaggle/working/trained/transfer_runs/MNIST2FashionMNIST/replay_zero",
+      "latest_checkpoint": {
+        "checkpoint": null,
+        "epoch": null,
+        "test_acc": null,
+        "trigger_acc": null
+      },
+      "best_by_test_acc": null,
+      "history_csv": null,
+      "curve_png": null
+    },
+    {
+      "label": "replay_default",
+      "replay_ratio": 0.15,
+      "save_path": "/kaggle/working/trained/transfer_runs/MNIST2FashionMNIST/replay_default",
+      "latest_checkpoint": {
+        "checkpoint": null,
+        "epoch": null,
+        "test_acc": null,
+        "trigger_acc": null
+      },
+      "best_by_test_acc": null,
+      "history_csv": null,
+      "curve_png": null
+    }
+  ],
+  "delta_latest_test_acc": null,
+  "delta_latest_trigger_acc": null
+}

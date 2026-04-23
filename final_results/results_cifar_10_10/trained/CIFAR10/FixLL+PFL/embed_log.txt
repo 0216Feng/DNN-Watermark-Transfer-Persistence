@@ -1,0 +1,8 @@
+CIFAR10_ResNet18_mix_(32)4_Epoch_0_test_acc_86.78%_trigger_acc_100.00%_TWL_7.8407_PFL_0.2198_SPL_0.0022_LP_0.0000
+CIFAR10_ResNet18_mix_(32)4_Epoch_1_test_acc_86.66%_trigger_acc_100.00%_TWL_11.6390_PFL_0.1127_SPL_0.0012_LP_0.0000
+CIFAR10_ResNet18_mix_(32)4_Epoch_2_test_acc_86.72%_trigger_acc_100.00%_TWL_15.3153_PFL_0.0687_SPL_0.0007_LP_0.0000
+CIFAR10_ResNet18_mix_(32)4_Epoch_3_test_acc_86.88%_trigger_acc_100.00%_TWL_18.9339_PFL_0.0519_SPL_0.0005_LP_0.0000
+CIFAR10_ResNet18_mix_(32)4_Epoch_4_test_acc_86.83%_trigger_acc_100.00%_TWL_22.1765_PFL_0.0501_SPL_0.0005_LP_0.0000
+CIFAR10_ResNet18_mix_(32)4_Epoch_5_test_acc_86.75%_trigger_acc_100.00%_TWL_25.0176_PFL_0.0478_SPL_0.0005_LP_0.0000
+CIFAR10_ResNet18_mix_(32)4_Epoch_6_test_acc_86.85%_trigger_acc_100.00%_TWL_27.5989_PFL_0.0457_SPL_0.0005_LP_0.0000
+CIFAR10_ResNet18_mix_(32)4_Epoch_7_test_acc_86.81%_trigger_acc_100.00%_TWL_29.9431_PFL_0.0377_SPL_0.0004_LP_0.0000

@@ -1,0 +1,9 @@
+epoch,test_acc,trigger_acc,checkpoint
+0,99.42,100.0,/kaggle/working/trained/MNIST/FixLL+PFL/MNIST_ResNet18_FixLL+PFL_Epoch_0_test_acc_99.42%_trigger_acc_100.00%_n_10_m_10_mix_(32)4_LP_0.0000.pt
+1,99.42,100.0,/kaggle/working/trained/MNIST/FixLL+PFL/MNIST_ResNet18_FixLL+PFL_Epoch_0_test_acc_99.42%_trigger_acc_100.00%_n_10_m_10_mix_(32)4_LP_0.0000.pt
+2,99.42,100.0,/kaggle/working/trained/MNIST/FixLL+PFL/MNIST_ResNet18_FixLL+PFL_Epoch_0_test_acc_99.42%_trigger_acc_100.00%_n_10_m_10_mix_(32)4_LP_0.0000.pt
+3,99.42999999999999,100.0,/kaggle/working/trained/MNIST/FixLL+PFL/MNIST_ResNet18_FixLL+PFL_Epoch_3_test_acc_99.43%_trigger_acc_100.00%_n_10_m_10_mix_(32)4_LP_0.0000.pt
+4,99.4,100.0,/kaggle/working/trained/MNIST/FixLL+PFL/MNIST_ResNet18_FixLL+PFL_Epoch_3_test_acc_99.43%_trigger_acc_100.00%_n_10_m_10_mix_(32)4_LP_0.0000.pt
+5,99.41,100.0,/kaggle/working/trained/MNIST/FixLL+PFL/MNIST_ResNet18_FixLL+PFL_Epoch_3_test_acc_99.43%_trigger_acc_100.00%_n_10_m_10_mix_(32)4_LP_0.0000.pt
+6,99.42999999999999,100.0,/kaggle/working/trained/MNIST/FixLL+PFL/MNIST_ResNet18_FixLL+PFL_Epoch_3_test_acc_99.43%_trigger_acc_100.00%_n_10_m_10_mix_(32)4_LP_0.0000.pt
+7,99.41,100.0,/kaggle/working/trained/MNIST/FixLL+PFL/MNIST_ResNet18_FixLL+PFL_Epoch_3_test_acc_99.43%_trigger_acc_100.00%_n_10_m_10_mix_(32)4_LP_0.0000.pt

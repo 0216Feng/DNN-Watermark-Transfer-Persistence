@@ -1,0 +1,9 @@
+epoch,test_acc,trigger_acc,checkpoint
+0,86.78,100.0,/kaggle/working/trained/CIFAR10/FixLL+PFL/CIFAR10_ResNet18_FixLL+PFL_Epoch_0_test_acc_86.78%_trigger_acc_100.00%_n_10_m_10_mix_(32)4_LP_0.0000.pt
+1,86.66,100.0,/kaggle/working/trained/CIFAR10/FixLL+PFL/CIFAR10_ResNet18_FixLL+PFL_Epoch_0_test_acc_86.78%_trigger_acc_100.00%_n_10_m_10_mix_(32)4_LP_0.0000.pt
+2,86.72,100.0,/kaggle/working/trained/CIFAR10/FixLL+PFL/CIFAR10_ResNet18_FixLL+PFL_Epoch_0_test_acc_86.78%_trigger_acc_100.00%_n_10_m_10_mix_(32)4_LP_0.0000.pt
+3,86.88,100.0,/kaggle/working/trained/CIFAR10/FixLL+PFL/CIFAR10_ResNet18_FixLL+PFL_Epoch_3_test_acc_86.88%_trigger_acc_100.00%_n_10_m_10_mix_(32)4_LP_0.0000.pt
+4,86.83,100.0,/kaggle/working/trained/CIFAR10/FixLL+PFL/CIFAR10_ResNet18_FixLL+PFL_Epoch_3_test_acc_86.88%_trigger_acc_100.00%_n_10_m_10_mix_(32)4_LP_0.0000.pt
+5,86.75,100.0,/kaggle/working/trained/CIFAR10/FixLL+PFL/CIFAR10_ResNet18_FixLL+PFL_Epoch_3_test_acc_86.88%_trigger_acc_100.00%_n_10_m_10_mix_(32)4_LP_0.0000.pt
+6,86.85000000000001,100.0,/kaggle/working/trained/CIFAR10/FixLL+PFL/CIFAR10_ResNet18_FixLL+PFL_Epoch_3_test_acc_86.88%_trigger_acc_100.00%_n_10_m_10_mix_(32)4_LP_0.0000.pt
+7,86.81,100.0,/kaggle/working/trained/CIFAR10/FixLL+PFL/CIFAR10_ResNet18_FixLL+PFL_Epoch_3_test_acc_86.88%_trigger_acc_100.00%_n_10_m_10_mix_(32)4_LP_0.0000.pt

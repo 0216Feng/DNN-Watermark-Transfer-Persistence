@@ -1,0 +1,37 @@
+{
+  "metric_contract": {
+    "primary_trigger_metric": "source_head_swap",
+    "secondary_trigger_metric": "target_head",
+    "primary_retention_definition": "accuracy on canonical trigger set after transfer/recovery under source-head-swap divided by accuracy on same trigger set before transfer"
+  },
+  "classifier_stability": {
+    "weight_diff": 6.947500705718994,
+    "bias_diff": 0.37192976474761963,
+    "frozen": false,
+    "layer_compared": "fc"
+  },
+  "feature_shift": {
+    "l2_distance": 14.400443380805337,
+    "cosine_similarity": 0.7358480828582861
+  },
+  "trigger_accuracy": {
+    "source_accuracy": 1.0,
+    "target_accuracy": 0.0,
+    "retention_rate": 0.0,
+    "target_accuracy_source_head": 0.9760000705718994,
+    "retention_rate_source_head": 0.9760000705718994,
+    "primary_trigger_metric": "source_head_swap",
+    "primary_trigger_accuracy": 0.9760000705718994,
+    "primary_retention_rate": 0.9760000705718994
+  },
+  "recovery_analysis": {
+    "error": "name 'raw_logits' is not defined"
+  },
+  "trustworthiness_score": 74.0515428208042,
+  "summary": {
+    "\u5206\u7c7b\u5934\u51bb\u7ed3": "\u274c",
+    "\u7279\u5f81\u4fdd\u7559": "73.58%",
+    "\u4e3b\u7559\u5b58\u7387(source-head-swap)": "97.60%",
+    "\u7efc\u5408\u8bc4\u5206": "74.05/100"
+  }
+}

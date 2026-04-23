@@ -1,0 +1,22 @@
+{
+  "metric_contract": {
+    "primary_trigger_metric": "source_head_swap",
+    "secondary_trigger_metric": "target_head",
+    "primary_retention_definition": "accuracy on canonical trigger set after transfer/recovery under source-head-swap divided by accuracy on same trigger set before transfer"
+  },
+  "run_meta": {
+    "task": "cifar10_cifar100",
+    "source_model": "/kaggle/working/trained/CIFAR10/FixLL+PFL/CIFAR10_ResNet18_FixLL+PFL_Epoch_1_test_acc_87.27%_trigger_acc_100.00%_n_100_m_10_mix_(32)4_LP_0.0000.pt",
+    "target_model": "/kaggle/working/trained/transfer_runs/CIFAR102CIFAR100/replay_zero/Final_Transfer_CIFAR102CIFAR100_train_l4_fc_out.pt",
+    "verify_dataset_name": "CIFAR100",
+    "compare_mode": "full_compare",
+    "run_tag": "replay_zero",
+    "replay_ratio": 0.0
+  },
+  "transfer_dir": "/kaggle/working/trained/transfer_runs/CIFAR102CIFAR100/replay_zero",
+  "source_csv": "/kaggle/working/trained/transfer_runs/CIFAR102CIFAR100/replay_zero/history_train_l4_fc_out_replay_0.0.csv",
+  "transfer_curve_png": "/kaggle/working/result/transfer_cifar10_cifar100_20260422_173228_curve.png",
+  "num_epochs": 50,
+  "final_target_acc": 25.929999999999996,
+  "final_trigger_acc": 100.0
+}

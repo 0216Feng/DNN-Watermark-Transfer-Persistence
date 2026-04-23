@@ -1,0 +1,29 @@
+{
+  "run_meta": {
+    "dataset": "MNIST",
+    "embed_mode": 8,
+    "mode_name": "FixLL+PFL",
+    "n": 100,
+    "m": 10,
+    "batch_size": 32,
+    "mix": 4,
+    "device": "cuda",
+    "is_kaggle": true
+  },
+  "trained_output_dir": "/kaggle/working/trained/MNIST/FixLL+PFL",
+  "num_checkpoints": 2,
+  "latest_checkpoint": {
+    "epoch": 5,
+    "test_acc": 99.53999999999999,
+    "trigger_acc": 100.0,
+    "checkpoint": "/kaggle/working/trained/MNIST/FixLL+PFL/MNIST_ResNet18_FixLL+PFL_Epoch_1_test_acc_99.56%_trigger_acc_100.00%_n_100_m_10_mix_(32)4_LP_0.0000.pt"
+  },
+  "best_by_test_acc": {
+    "epoch": 1,
+    "test_acc": 99.56,
+    "trigger_acc": 100.0,
+    "checkpoint": "/kaggle/working/trained/MNIST/FixLL+PFL/MNIST_ResNet18_FixLL+PFL_Epoch_1_test_acc_99.56%_trigger_acc_100.00%_n_100_m_10_mix_(32)4_LP_0.0000.pt"
+  },
+  "history_csv": "/kaggle/working/result/MNIST_FixLL+PFL_20260422_144109_history.csv",
+  "curve_png": "/kaggle/working/result/MNIST_FixLL+PFL_20260422_144109_curve.png"
+}

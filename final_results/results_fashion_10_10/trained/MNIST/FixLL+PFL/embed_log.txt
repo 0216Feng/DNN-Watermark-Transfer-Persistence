@@ -1,0 +1,8 @@
+MNIST_ResNet18_mix_(32)4_Epoch_0_test_acc_99.42%_trigger_acc_100.00%_TWL_1.1835_PFL_0.7676_SPL_0.0000_LP_0.0000
+MNIST_ResNet18_mix_(32)4_Epoch_1_test_acc_99.42%_trigger_acc_100.00%_TWL_1.5248_PFL_0.3966_SPL_0.0000_LP_0.0000
+MNIST_ResNet18_mix_(32)4_Epoch_2_test_acc_99.42%_trigger_acc_100.00%_TWL_1.8613_PFL_0.5910_SPL_0.0000_LP_0.0000
+MNIST_ResNet18_mix_(32)4_Epoch_3_test_acc_99.43%_trigger_acc_100.00%_TWL_2.1285_PFL_0.7402_SPL_0.0000_LP_0.0000
+MNIST_ResNet18_mix_(32)4_Epoch_4_test_acc_99.40%_trigger_acc_100.00%_TWL_2.3935_PFL_1.0083_SPL_0.0000_LP_0.0000
+MNIST_ResNet18_mix_(32)4_Epoch_5_test_acc_99.41%_trigger_acc_100.00%_TWL_2.7171_PFL_0.4787_SPL_0.0000_LP_0.0000
+MNIST_ResNet18_mix_(32)4_Epoch_6_test_acc_99.43%_trigger_acc_100.00%_TWL_3.0493_PFL_0.4388_SPL_0.0000_LP_0.0000
+MNIST_ResNet18_mix_(32)4_Epoch_7_test_acc_99.41%_trigger_acc_100.00%_TWL_3.4094_PFL_0.1623_SPL_0.0000_LP_0.0000
